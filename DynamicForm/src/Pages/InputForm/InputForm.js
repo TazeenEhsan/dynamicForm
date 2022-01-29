@@ -43,7 +43,7 @@ const InputForm = () => {
                     {
                         formInfo?.map(singleInfo => <>
                             {
-                                singleInfo.type === 'textarea' ? <> <small>{singleInfo.placeholder}</small> <br /> <textarea onBlur={handleOnBlur} required style={{ border: '2px solid black', width: '370px', marginBottom: '10px', borderRadius: '4px' }}></textarea> <br /> </> : <>
+                                singleInfo.type === 'textarea' ? <> <small>{singleInfo.placeholder}</small> <br /> <textarea onBlur={handleOnBlur} style={{ border: '2px solid black', width: '370px', marginBottom: '10px', borderRadius: '4px' }}></textarea> <br /> </> : <>
                                     <small>{singleInfo.placeholder}</small> <br />
 
                                     <input onBlur={handleOnBlur} type={singleInfo.type} name={singleInfo.placeholder} placeholder={singleInfo.placeholder} required style={{ border: '2px solid black', width: '370px', marginBottom: '10px', borderRadius: '4px' }} /><br /></>
